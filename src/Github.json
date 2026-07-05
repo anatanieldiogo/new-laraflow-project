@@ -1,0 +1,69 @@
+{
+  "version": "1.0",
+  "id": "Main",
+  "createdAt": "2026-07-02T11:52:26.031Z",
+  "viewport": {
+    "x": -171.56306991069494,
+    "y": -261.11045722220433,
+    "zoom": 1.4339552480158273
+  },
+  "steps": [
+    {
+      "id": "flow_1782993113839_5",
+      "type": "flow",
+      "label": "Flow",
+      "position": {
+        "x": 180,
+        "y": 297
+      },
+      "source": null,
+      "config": {
+        "async": false,
+        "retry": 0,
+        "timeout": 30,
+        "on_error": "fail"
+      },
+      "steps": []
+    },
+    {
+      "id": "listener_1782993116589_6",
+      "type": "listener",
+      "label": "Listener",
+      "position": {
+        "x": 505,
+        "y": 301
+      },
+      "source": {
+        "node": "flow_1782993113839_5",
+        "output": null
+      },
+      "config": {
+        "method": "GET",
+        "path": "/users",
+        "auth": "none",
+        "middlewares": []
+      },
+      "steps": []
+    },
+    {
+      "id": "response_1782993125491_7",
+      "type": "response",
+      "label": "Response",
+      "position": {
+        "x": 651,
+        "y": 453
+      },
+      "source": {
+        "node": "listener_1782993116589_6",
+        "output": null
+      },
+      "config": {
+        "status": 200,
+        "body": "users list",
+        "headers": {},
+        "template": {}
+      },
+      "steps": []
+    }
+  ]
+}
