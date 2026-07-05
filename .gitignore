@@ -1,0 +1,16 @@
+
+# Settings
+.laraflow/settings.json
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+!.env.example

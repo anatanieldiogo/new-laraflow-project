@@ -1,0 +1,7 @@
+{
+  "base_url": "",
+  "timezone": "UTC",
+  "locale": "pt_PT",
+  "auth_driver": "sanctum",
+  "variables": {}
+}
